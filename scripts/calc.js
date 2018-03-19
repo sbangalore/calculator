@@ -30,7 +30,23 @@ function input(playerInput) {
   display(a);
 }
 
-
 function display(result) {
   document.getElementById('result').innerHTML=result;
+  if (a>0) {
+    document.getElementById('clearButton').innerHTML='C';
+  }
+  else if (a==0 || a=="") {
+    document.getElementById('clearButton').innerHTML='AC';
+  }
+}
+
+function backspace() {
+  a = Math.floor(a/10);
+  if (a!=0){
+    display(a);
+  }
+  else {
+    a = '';
+    display(a);
+  }
 }

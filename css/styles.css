@@ -39,6 +39,19 @@ html {
   box-shadow: 0px 0px #666;
 }
 
+#clearButton {
+  background-color: #cecece;
+}
+
+#clearButton:hover {
+  background-color: #c6c6c6;
+}
+
+#clearButton:active {
+  background-color: #c6c6c6;
+  box-shadow: 0px 0px #666;
+}
+
 .operations {
   background-color: orange;
 }
