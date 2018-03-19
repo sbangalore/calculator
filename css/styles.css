@@ -9,20 +9,47 @@ html {
   text-align: center;
 }
 
-
 .button {
   background-color: #e8e8e8;
   width: 40px;
   height: 40px;
   border: gray 1px solid;
+  box-shadow: 1px 1px #999;
+}
+
+.button:hover {
+  background-color: #dbdbdb;
+}
+
+.button:active {
+  background-color: #dbdbdb;
+  box-shadow: 0px 0px #666;
 }
 
 #topRow {
   background-color: #cecece;
 }
 
+#topRow:hover {
+  background-color: #c6c6c6;
+}
+
+#topRow:active {
+  background-color: #c6c6c6;
+  box-shadow: 0px 0px #666;
+}
+
 .operations {
   background-color: orange;
+}
+
+.operations:hover {
+  background-color: #eb9a05;
+}
+
+.operations:active {
+  background-color: #eb9a05;
+  box-shadow: 0px 0px #666;
 }
 
 #resultDiv {
