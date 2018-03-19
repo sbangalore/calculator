@@ -23,6 +23,14 @@ function operate(operator, a, b) {
   return operator(a, b);
 }
 
-function input(playerInput){
-  console.log(playerInput);
+function input(playerInput) {
+  if (a<999999999999) {
+    a = a*10+playerInput;
+  }
+  display(a);
+}
+
+
+function display(result) {
+  document.getElementById('result').innerHTML=result;
 }
