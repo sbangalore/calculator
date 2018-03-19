@@ -13,13 +13,13 @@
           <td class='button' id='clearButton' onclick='backspace()'>
             AC
           </td>
-          <td class='button' id='topRow'>
+          <td class='button' id='topRow' onclick='operate(inverse, a)'>
             +/-
           </td>
-          <td class='button' id='topRow'>
+          <td class='button' id='topRow' onclick='operate(modulus, a)'>
             %
           </td>
-          <td class='button operations'>
+          <td class='button operations' onclick='operate(divide, a)'>
             ÷
           </td>
         </tr>
@@ -33,7 +33,7 @@
           <td class='button' onclick="input(9)">
             9
           </td>
-          <td class='button operations'>
+          <td class='button operations' onclick='operate(multiply, a)'>
             x
           </td>
         </tr>
@@ -47,7 +47,7 @@
           <td class='button' onclick="input(6)">
             6
           </td>
-          <td class='button operations'>
+          <td class='button operations' onclick='operate(subtract, a)'>
             -
           </td>
         </tr>
@@ -61,7 +61,7 @@
           <td class='button' onclick="input(3)">
             3
           </td>
-          <td class='button operations'>
+          <td class='button operations' onclick='operate(divide, a)'>
             +
           </td>
         </tr>
@@ -69,10 +69,10 @@
           <td class='button' colspan='2' onclick="input(0)">
             0
           </td>
-          <td class='button'>
+          <td class='button'onclick='operate(decimal, a)'>
             .
           </td>
-          <td class='button operations'>
+          <td class='button operations' onclick='operate(equals, a)'>
             =
           </td>
         </tr>

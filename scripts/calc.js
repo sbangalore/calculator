@@ -19,7 +19,11 @@ function divide(a,b) {
   return a/b;
 }
 
-function operate(operator, a, b) {
+function inverse(a) {
+  return a*-1;
+}
+
+function operate(operator, a) {
   return operator(a, b);
 }
 
@@ -32,10 +36,10 @@ function input(playerInput) {
 
 function display(result) {
   document.getElementById('result').innerHTML=result;
-  if (a>0) {
+  if (result>0) {
     document.getElementById('clearButton').innerHTML='C';
   }
-  else if (a==0 || a=="") {
+  else if (result==0 || result=="") {
     document.getElementById('clearButton').innerHTML='AC';
   }
 }
