@@ -1,0 +1,44 @@
+html {
+  font-family: 'open-sans', sans-serif;
+}
+
+#calcTable {
+  width: 320px;
+  height: 350px;
+  margin: auto;
+  text-align: center;
+}
+
+
+.button {
+  background-color: #e8e8e8;
+  width: 40px;
+  height: 40px;
+  border: gray 1px solid;
+}
+
+#topRow {
+  background-color: #cecece;
+}
+
+.operations {
+  background-color: orange;
+}
+
+#resultDiv {
+  background-color: #3d3d3d;
+  color: white;
+  margin: auto;
+  width: 320px;
+  height: 90px;
+  text-align: right;
+  margin-top: 30px;
+}
+
+#result {
+  position: relative;
+  top: 30px;
+  right: 10px;
+  font-size: 2.5em;
+  padding-right: 10px;
+}
