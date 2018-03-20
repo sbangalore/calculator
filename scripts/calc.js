@@ -64,7 +64,12 @@ function subtract(a,b) {
 }
 
 function operate(operator) {
-  if (command != '' | command != 0) {
+  if (operator == 'inverse') {
+    a = inverse(result);
+    command = '';
+    display(a);
+  }
+  else if (command != '' | command != 0) {
     equals();
   }
   result = a;
