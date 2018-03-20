@@ -19,6 +19,7 @@ html {
 
 .button:hover {
   background-color: #dbdbdb;
+  cursor: pointer;
 }
 
 .button:active {
