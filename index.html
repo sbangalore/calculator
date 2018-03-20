@@ -10,27 +10,27 @@
     <div id='buttons'>
       <table id='calcTable'>
         <tr class='buttonRow'>
-          <td class='button' id='clearButton' onclick='backspace()'>
+          <td class='button' class='clearButton' id='numUndo' onclick='undo()'>
             AC
           </td>
-          <td class='button' id='topRow' onclick='operate(inverse, a)'>
+          <td class='button' class='topRow' id='numInv' onclick='operate(inverse, a)'>
             +/-
           </td>
-          <td class='button' id='topRow' onclick='operate(modulus, a)'>
+          <td class='button' class='topRow' id='numMod' onclick='operate(modulus, a)'>
             %
           </td>
-          <td class='button operations' onclick='operate(divide, a)'>
+          <td class='button operations' class='topRow' id='numDiv' onclick='operate(divide, a)'>
             ÷
           </td>
         </tr>
         <tr class='buttonRow'>
-          <td class='button' onclick="input(7)">
+          <td class='button' id='num7' onclick='input(7)'>
             7
           </td>
-          <td class='button' onclick="input(8)">
+          <td class='button' id='num8' onclick='input(8)'>
             8
           </td>
-          <td class='button' onclick="input(9)">
+          <td class='button' id='num9' onclick='input(9)'>
             9
           </td>
           <td class='button operations' onclick='operate(multiply, a)'>
@@ -38,13 +38,13 @@
           </td>
         </tr>
         <tr class='buttonRow'>
-          <td class='button' onclick="input(4)">
+          <td class='button' id='num4' onclick='input(4)'>
             4
           </td>
-          <td class='button' onclick="input(5)">
+          <td class='button' id='num5' onclick='input(5)'>
             5
           </td>
-          <td class='button' onclick="input(6)">
+          <td class='button' id='num6' onclick='input(6)'>
             6
           </td>
           <td class='button operations' onclick='operate(subtract, a)'>
@@ -52,27 +52,27 @@
           </td>
         </tr>
         <tr class='buttonRow'>
-          <td class='button' onclick="input(1)">
+          <td class='button' id='num1' onclick='input(1)'>
             1
           </td>
-          <td class='button' onclick="input(2)">
+          <td class='button' id='num2' onclick='input(2)'>
             2
           </td>
-          <td class='button' onclick="input(3)">
+          <td class='button' id='num3' onclick='input(3)'>
             3
           </td>
-          <td class='button operations' onclick='operate(divide, a)'>
+          <td class='button operations'  id='numAdd' onclick='operate(add)'>
             +
           </td>
         </tr>
         <tr class='buttonRow'>
-          <td class='button' colspan='2' onclick="input(0)">
+          <td class='button' colspan='2' id='num0' onclick='input(0)'>
             0
           </td>
-          <td class='button'onclick='operate(decimal, a)'>
+          <td class='button' id='numDec' onclick='operate(decimal, a)'>
             .
           </td>
-          <td class='button operations' onclick='operate(equals, a)'>
+          <td class='button operations' id='numEqu' onclick='equals()'>
             =
           </td>
         </tr>

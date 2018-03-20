@@ -26,28 +26,28 @@ html {
   box-shadow: 0px 0px #666;
 }
 
-#topRow {
+.topRow {
   background-color: #cecece;
 }
 
-#topRow:hover {
+.topRow:hover {
   background-color: #c6c6c6;
 }
 
-#topRow:active {
+.topRow:active {
   background-color: #c6c6c6;
   box-shadow: 0px 0px #666;
 }
 
-#clearButton {
+.clearButton {
   background-color: #cecece;
 }
 
-#clearButton:hover {
+.clearButton:hover {
   background-color: #c6c6c6;
 }
 
-#clearButton:active {
+.clearButton:active {
   background-color: #c6c6c6;
   box-shadow: 0px 0px #666;
 }
