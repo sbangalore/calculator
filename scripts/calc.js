@@ -64,7 +64,7 @@ function subtract(a,b) {
 }
 
 function operate(operator) {
-  if (command != '') {
+  if (command != '' | command != 0) {
     equals();
   }
   result = a;
@@ -92,6 +92,7 @@ function equals() {
     default:
       break;
   }
+  command = '';
   display(a);
 }
 
