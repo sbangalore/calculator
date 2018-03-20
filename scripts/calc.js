@@ -41,11 +41,7 @@ document.addEventListener('keypress', function() {
   }
 });
 
-
-
-function subtract(a,b) {
-  return a-b;
-}
+/* functions */
 
 function multiply(a,b) {
   return a*b;
@@ -63,6 +59,10 @@ function add(a,b) {
   return a+b;
 }
 
+function subtract(a,b) {
+  return a-b;
+}
+
 function operate(operator) {
   if (command != '') {
     equals();
@@ -78,8 +78,17 @@ function equals() {
     case add:
       a = add(a,result);
       break;
+    case subtract:
+      a = add(-a, result);
+      break;
     case inverse:
       a = inverse(result);
+      break;
+    case multiply:
+      a = multiply(a, result);
+      break;
+    case divide:
+      a = multiply(1/a, result);
     default:
       break;
   }
